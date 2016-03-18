@@ -4,20 +4,20 @@
 
 > Etape 1 : Clone repo
 
-''' shell
+``` shell
 git clone git@gitlab.aymericdaurelle.ovh:transcodesupinfo/vagrant.git
-'''
+```
 
 > Etape 2 : Run vagrant
 
-''' shell
+``` shell
 cd vagrant
 vagrant up
-'''
+```
 
 > Etape 3 : Run docker
 
-''' shell
+``` shell
 cd /docker
 docker-compose up
-'''
+```
