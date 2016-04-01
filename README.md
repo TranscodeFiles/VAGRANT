@@ -8,33 +8,25 @@
 git clone git@gitlab.aymericdaurelle.ovh:transcodesupinfo/vagrant.git
 ```
 
-> Etape 2 : Ajout de la clé ssh
+> Etape 2 : Ajout de la clé ssh à gitlab 
+
+[Configuration gitlab](https://help.github.com/articles/checking-for-existing-ssh-keys)
+
+
+> Etape 3 : Ajout du fichier **config** dans le dossier ~/.ssh/
 
 ``` shell
-cd vagrant
-cp ~/.ssh/id_rsa .ssh/id_rsa
-cp ~/.ssh/id_rsa.pub .ssh/id_rsa.pub
-touch .ssh/config
+Host gitlab.aymericdaurelle.ovh
+  ForwardAgent yes
 ```
 
-Contenue du fichier config dans .ssh/config
-
-``` shell
-# ssh/config
-# Git keys
-host gitlab.aymericdaurelle.ovh 
-     user monaddresse@mail.com
-     port 22
-     identityfile /root/.ssh/id_rsa
-```
-
-> Etape 3 : Run vagrant
+> Etape 4 : Run vagrant
 
 ``` shell
 vagrant up
 ```
 
-> Etape 4 : Run docker
+> Etape 5 : Run docker
 
 ``` shell
 cd /docker
