@@ -20,6 +20,14 @@ Host gitlab.aymericdaurelle.ovh
   ForwardAgent yes
 ```
 
+> Etape 5 : Commandes à effectuer
+
+``` shell 
+eval `ssh-agent`
+ssh-add
+ssh-add -l
+```
+
 > Etape 4 : Run vagrant
 
 ``` shell
