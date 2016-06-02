@@ -22,3 +22,4 @@ Vagrant.configure(2) do |config|
   config.vm.provision "shell", path: "project.sh", privileged: false
 
 end
+

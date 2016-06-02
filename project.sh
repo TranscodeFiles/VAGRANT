@@ -10,7 +10,7 @@ echo "SET RIGHT PERMISSIONS DIRECTORY"
 sudo chown -R vagrant:vagrant /docker
 
 echo "CLONE DOCKER IMAGES INFRA"
-git clone git@gitlab.aymericdaurelle.ovh:transcodesupinfo/infra-transcode.git /docker
+git clone -b develop git@gitlab.aymericdaurelle.ovh:transcodesupinfo/infra-transcode.git /docker
 
 echo "CLONE DOCKER IMAGES CORE API"
 git clone -b develop git@gitlab.aymericdaurelle.ovh:transcodesupinfo/core-api.git /docker/core/core-api
