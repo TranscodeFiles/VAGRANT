@@ -44,6 +44,3 @@ doc/
 .ruby-gemset
 .ruby-version
 .rvmrc
-
-# Other files
-.ssh/*
