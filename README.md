@@ -1,6 +1,6 @@
 # Infra docker Transcode
 
-## Instalation
+## installation
 
 > Etape 1 : Clone repo
 
